@@ -4,7 +4,7 @@ const prevButton = document.querySelector(".prev-btn");
 const author = document.querySelector("#author");
 const job = document.querySelector("#job");
 const info = document.querySelector("#info");
-const randomButton = querySelector(".random-btn");
+const randomButton = document.querySelector(".random-btn");
 let img  = document.getElementById("person-img");
 let imgUrl = img.getAttribute("src");
 console.log(imgUrl);
@@ -29,6 +29,10 @@ randomButton.addEventListener('click', () => {
     showPerson(nextIndex)
 });
 
+// when the window load 
+window.addEventListener('DOMContentLoaded', () => {
+    showPerson(0);
+})
 
 // show person when we click
 function showPerson(index) {
