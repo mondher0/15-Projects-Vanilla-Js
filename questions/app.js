@@ -6,7 +6,7 @@ const minusButton = document.querySelectorAll('.minus-icon');
 
 // show text and minus button when plus button is clicked
 plusButton.forEach((button) => {
-  button.addEventListener('click', (e) =>  {
+  button.addEventListener('click', (e) => {
 
     //Show Text 
     let articles = section.querySelectorAll(".question-text")
@@ -27,11 +27,10 @@ plusButton.forEach((button) => {
         btn.classList.add('hide-icon');
     });
     e.currentTarget.parentElement.children[1].classList.remove('hide-icon');
-
   });
 });
 
-// hide textn and show plus button when minus button is clicked
+// hide text and show plus button when minus button is clicked
 minusButton.forEach((button) => {
     button.addEventListener('click', (e) =>  {
         let question = e.currentTarget.parentElement.parentElement.parentElement.children[1];
