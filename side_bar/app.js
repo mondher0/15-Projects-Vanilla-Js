@@ -4,15 +4,11 @@ const sideBarClose = document.querySelector(".close-btn");
 
 // Close and open sidebar with toggle button
 sideBarToggle.addEventListener("click", () => {
-    if (sideBar.style.display == "none") {
-        sideBar.style.display = "grid";
-    }else {
-        sideBar.style.display = "none";
-    }
+  sideBar.classList.toggle("show-sidebar");
 })
 // Close sidebar with close button
 sideBarClose.addEventListener("click", () => {
-    sideBar.style.display = "none";
+    sideBar.classList.toggle("show-sidebar");
 })
 
 
