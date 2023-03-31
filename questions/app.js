@@ -26,7 +26,7 @@ plusButton.forEach((button) => {
     minusButton.forEach((btn) => {
         btn.classList.add('hide-icon');
     });
-    e.currentTarget.parentElement.children[1].classList.remove('hide-icon');
+    e.currentTarget.parentElement.children[1].classList.remove('hide-icon'); 
   });
 });
 
